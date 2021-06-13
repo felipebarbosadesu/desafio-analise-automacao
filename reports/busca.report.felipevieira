@@ -1,0 +1,18 @@
+# language: pt
+
+Funcionalidade: Buscas no Fake Ecommerce
+Como um cliente do site FakeEcommerce
+Gostaria de poder buscar por produtos
+Para customizar as compras
+
+Contexto:
+Dado que esteja na página inicial
+
+  
+Cenário: Buscar por termo válido
+Quando buscar pelo produto 'shirt'
+Então devem ser retornados produtos
+
+Cenário: Busca sem resultados
+Quando buscar pelo produto inexistente
+Então a mensagem de aviso de nenhum resultado foi encontrada deve ser exibida
