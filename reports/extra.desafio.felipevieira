@@ -1,0 +1,21 @@
+# language: pt
+
+Funcionalidade: adicionar produto no carrinho 
+Como um usuário não logado no sistema
+Gostaria de adiconar um produto da categoria Dresses no carrinho
+
+
+Contexto:
+Dado que esteja na página inicial
+
+Cenário: Adicionar produto da categoria dress no carrinho
+Buscar por categoria dresses na página incial
+Acessa a página da categoria dresses
+Seleciona adicionar ao carrinho
+Então mensagem produto adicionado com sucesso deve ser exibida
+
+Cenário: Adicionar produto da categoria dress no carrinho produto sem sucesso
+Buscar por categoria dresses na página incial
+Acessa a página da categoria dresses
+Seleciona adicionar ao carrinho
+Então mensagem produto em falta no estoque é exibida
