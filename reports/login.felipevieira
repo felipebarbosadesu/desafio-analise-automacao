@@ -1,0 +1,21 @@
+# language: pt
+
+Funcionalidade: Login no Ecommerce Fake 
+Como um usuário do sistema
+'Usuario@gmail.com' quer completar o login
+para ter acesso de usuário ao Ecommerce 
+
+Contexto:
+Dado que 'Usuario@gmail.com' possui uma conta no sistema 
+
+Cenário: Realizar login
+acessa a página de Login
+preeche suas credenciais
+acione a opção para logar
+O usúario deve ser redirecionado para a página minha conta
+
+Cenário: Login com falha 
+acessa a página de Login
+preenche suas credenciais com senha incorreta
+aciona a opção logar
+Então uma mensagem de aviso de senha incorreta deve ser exibida
